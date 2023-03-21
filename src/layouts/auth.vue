@@ -1,15 +1,11 @@
 <template>
-  <div class="home">
-    <NavLogoAuth />
-  </div>
+  <NavLogoAuth></NavLogoAuth>
+  <slot />
 </template>
 
 <script>
-// @ is an alias to /src
 import NavLogoAuth from "@/components/NavLogoAuth.vue";
-
 export default {
-  name: "HomeView",
   components: {
     NavLogoAuth,
   },
